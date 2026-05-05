@@ -24,6 +24,6 @@ def make_predictions(data_filepath, model_filepath):
         
     # Generate predictions
     y_test_pred = model.predict(X_test)
-    # Put predictions into Series with name "bankrupt", and same index as X_test
-    y_test_pred = pd.Series(y_test_pred, index=X_test.index, name="bankrupt")
+    # Put predictions into Series with name "Churn", and same index as X_test
+    y_test_pred = pd.Series(y_test_pred, index=X_test.index, name="Churn")
     return y_test_pred
